@@ -1,0 +1,327 @@
+body {
+  background-color: white;
+  box-sizing: border-box;
+}
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+  font-size: 20px;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+.myButton {
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color: #79bbff;
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 12px 44px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528ecc;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+  background-color: #378de5;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.controls {
+  display: inline-flex;
+}
+
+.star svg {
+  width: 50px;
+  height: 50px;
+}
+
+.grid {
+  margin-top: 10px;
+  display: grid;
+}
+
+.houston .grid {
+  width: 600px;
+  height: 600px;
+}
+
+.orlando .grid {
+  width: 300px;
+  height: 300px;
+}
+
+.grid span {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid navy;
+}
+
+.grid.gx3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid.gx4 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.grid.gx5 {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.langley .grid.gx5 {
+  grid-template-rows: none;
+}
+
+.grid.gx6 {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.grid.gx9 {
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.langley .grid.gx9 {
+  grid-template-rows: none;
+}
+
+.orlando {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  row-gap: 50px;
+  column-gap: 50px;
+}
+
+.orlando .star svg {
+  height: 40px;
+  width: 40px;
+}
+
+.houston .blocked {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(45deg, transparent, transparent 10px, #ccc 10px, #ccc 20px), linear-gradient(to bottom, #eee, #999);
+  border: 0;
+}
+
+.houston .houston-polys {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 60%;
+  grid-gap: 10px;
+}
+
+.houston .poly.grid span {
+  border: none;
+}
+
+.houston .poly.grid.gx2 {
+  width: 150px;
+  height: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.houston .poly.grid.gx3 {
+  width: 100px;
+  height: 150px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.houston .poly.grid .box {
+  border: 1px solid navy;
+}
+
+.langley {
+  display: grid;
+  grid-template-rows: repeat(15, auto);
+  grid-auto-flow: column;
+}
+
+.langley .grid {
+  height: 50px;
+}
+
+.langley .grid.gx5 {
+  width: 200px;
+}
+
+.langley .grid.gx9 {
+  width: 500px;
+}
+
+.langley .bubbles {
+  grid-row: span 15;
+  padding-top: 10px;
+}
+
+.langley .box {
+  width: 50px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid navy;
+}
+
+.langley .box.bubble {
+  margin: 0;
+  height: 30px;
+  font-size: 25px;
+}
+
+.langley .box.eq {
+  border: none;
+}
+
+.washington {
+  display: grid;
+  grid-template-columns: 1 1fr;
+}
+
+.washington span {
+  margin-top: 0px;
+  border: none;
+  width: 35px;
+  height: 35px;
+}
+
+.washington .circ,
+.washington .sqr {
+  border: 1px solid navy;
+  color: lightsteelblue;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.washington .sqr svg {
+  width: 38.5px;
+  height: 47.25px;
+}
+
+.washington .circ {
+  border-radius: 17.5px;
+}
+
+.washington .gx30 {
+  grid-template-columns: repeat(30, 37px);
+}
+
+.washington .gx24 {
+  grid-gap: 0;
+  grid-template-columns: repeat(24, 37px);
+}
+
+.washington .box {
+  width: 50px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid navy;
+}
+
+.washington .bubbles {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 80px;
+  justify-content: center;
+}
+
+.washington .bubbles .sqr {
+  justify-content: center;
+  align-items: center;
+}
+
+.lock {
+  width: 100%;
+  height: 100%;
+  fill: lightsteelblue;
+}
+
+@media print {
+  select {
+    color: navy;
+    font-weight: bolder;
+  }
+
+  .select::after,
+  .buttons {
+    display: none;
+  }
+
+  @page {
+    margin: 0 10px 0 20px;
+    size: portrait;
+  }
+}
