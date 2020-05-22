@@ -346,11 +346,13 @@ class Washington extends React.Component {
 
 
 
+
+
     () => {
       return (
         React.createElement("div", { className: "bubbles grid gx24" },
         this.state.bubbles.map((bubble, index) =>
-        React.createElement("span", { className: "circ" }, bubble !== 0 ? React.createElement(Lock, null) : ''))));
+        React.createElement("span", { className: "circ" }, bubble !== 0 ? React.createElement(Lock, null) : ""))));
 
 
 
@@ -669,8 +671,6 @@ class App extends React.Component {
 
         case "washington":
           return React.createElement(Washington, { stars: this.generateRandomLocations("W") });
-        case "langley":
-          return React.createElement(Langley, null);
         default:
           return null;}
 
@@ -685,8 +685,7 @@ class App extends React.Component {
       React.createElement("option", { value: "" }, "Choose a Location"),
       React.createElement("option", { value: "houston" }, "Houston"),
       React.createElement("option", { value: "orlando" }, "Orlando"),
-      React.createElement("option", { value: "washington" }, "Washington"),
-      //React.createElement("option", { value: "langley" }, "Langley (Old)"))),
+      React.createElement("option", { value: "washington" }, "Washington"))),
 
 
       React.createElement("div", { className: "buttons" },
