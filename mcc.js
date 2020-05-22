@@ -163,13 +163,13 @@ class Houston extends React.Component {
       React.createElement("div", { className: "houston-polys" },
       React.createElement(RawGrid, {
         arr: [
-        ["Z", 1, 1],
+        ["S", 1, 1],
         [1, 1, 0]] }),
 
 
       React.createElement(RawGrid, {
         arr: [
-        [1, 1, "S"],
+        [1, 1, "Z"],
         [0, 1, 1]] }),
 
 
@@ -596,17 +596,6 @@ class App extends React.Component {
     });_defineProperty(this, "validateCount",
 
     (grid, rows, columns, randomValues) => {
-      // var count = 0;
-      // for (var r = 0; r < rows; r++) {
-      //   for (var c = 0; c < columns; c++) {
-      //     if (grid[r][c] !== 0) {
-      //       count++;
-      //     }
-      //   }
-      // }
-      // if (count !== randomValues) {
-      //   return false;
-      // }
       return true;
     });_defineProperty(this, "validateSpacing",
     (grid, rows, columns, space, number = true) => {
