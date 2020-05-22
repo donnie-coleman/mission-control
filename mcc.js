@@ -686,7 +686,7 @@ class App extends React.Component {
       React.createElement("option", { value: "houston" }, "Houston"),
       React.createElement("option", { value: "orlando" }, "Orlando"),
       React.createElement("option", { value: "washington" }, "Washington"),
-      React.createElement("option", { value: "langley" }, "Langley (Old)"))),
+      //React.createElement("option", { value: "langley" }, "Langley (Old)"))),
 
 
       React.createElement("div", { className: "buttons" },
