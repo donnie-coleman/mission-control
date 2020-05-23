@@ -563,7 +563,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      sheet: "houston",
+      sheet: "",
       forceRefresh: 0
     };
   }
