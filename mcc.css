@@ -315,7 +315,7 @@ select {
     font-weight: bolder;
   }
 
-  .select {
+  .select, select, .select::after {
     background: none;
   }
 
