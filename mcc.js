@@ -663,7 +663,7 @@ class App extends React.Component {
         default:
           return null;}
 
-    });this.state = { sheet: "houston", forceRefresh: 0 };}
+    });this.state = { sheet: "", forceRefresh: 0 };}
 
   render() {
     return (
