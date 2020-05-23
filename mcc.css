@@ -101,14 +101,17 @@ select {
   margin-top: 10px;
   display: grid;
 }
+
 .houston .grid {
   width: 600px;
   height: 600px;
 }
+
 .orlando .grid {
   width: 300px;
   height: 300px;
 }
+
 .grid span {
   font-size: 40px;
   display: flex;
@@ -116,29 +119,36 @@ select {
   align-items: center;
   border: 1px solid navy;
 }
+
 .grid.gx3 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
+
 .grid.gx4 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
+
 .grid.gx5 {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
 }
+
 .langley .grid.gx5 {
   grid-template-rows: none;
 }
+
 .grid.gx6 {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
 }
+
 .grid.gx9 {
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(9, 1fr);
 }
+
 .langley .grid.gx9 {
   grid-template-rows: none;
 }
@@ -150,6 +160,7 @@ select {
   row-gap: 50px;
   column-gap: 50px;
 }
+
 .orlando .star svg {
   height: 40px;
   width: 40px;
@@ -161,27 +172,32 @@ select {
   background: repeating-linear-gradient(45deg, transparent, transparent 10px, #ccc 10px, #ccc 20px), linear-gradient(to bottom, #eee, #999);
   border: 0;
 }
+
 .houston .houston-polys {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   width: 60%;
   grid-gap: 10px;
 }
+
 .houston .poly.grid span {
   border: none;
 }
+
 .houston .poly.grid.gx2 {
   width: 150px;
   height: 100px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
+
 .houston .poly.grid.gx3 {
   width: 100px;
   height: 150px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
+
 .houston .poly.grid .box {
   border: 1px solid navy;
 }
@@ -191,19 +207,24 @@ select {
   grid-template-rows: repeat(15, auto);
   grid-auto-flow: column;
 }
+
 .langley .grid {
   height: 50px;
 }
+
 .langley .grid.gx5 {
   width: 200px;
 }
+
 .langley .grid.gx9 {
   width: 500px;
 }
+
 .langley .bubbles {
   grid-row: span 15;
   padding-top: 10px;
 }
+
 .langley .box {
   width: 50px;
   font-size: 40px;
@@ -212,11 +233,13 @@ select {
   align-items: center;
   border: 1px solid navy;
 }
+
 .langley .box.bubble {
   margin: 0;
   height: 30px;
   font-size: 25px;
 }
+
 .langley .box.eq {
   border: none;
 }
@@ -225,12 +248,14 @@ select {
   display: grid;
   grid-template-columns: 1 1fr;
 }
+
 .washington span {
   margin-top: 0px;
   border: none;
   width: 35px;
   height: 35px;
 }
+
 .washington .circ,
 .washington .sqr {
   border: 1px solid navy;
@@ -238,20 +263,25 @@ select {
   font-size: 16px;
   line-height: 25px;
 }
+
 .washington .sqr svg {
   width: 38.5px;
   height: 47.25px;
 }
+
 .washington .circ {
   border-radius: 17.5px;
 }
+
 .washington .gx30 {
   grid-template-columns: repeat(30, 37px);
 }
+
 .washington .gx24 {
   grid-gap: 0;
   grid-template-columns: repeat(24, 37px);
 }
+
 .washington .box {
   width: 50px;
   font-size: 40px;
@@ -260,12 +290,14 @@ select {
   align-items: center;
   border: 1px solid navy;
 }
+
 .washington .bubbles {
   width: 100%;
   margin: 0 auto;
   padding-top: 80px;
   justify-content: center;
 }
+
 .washington .bubbles .sqr {
   justify-content: center;
   align-items: center;
@@ -281,6 +313,10 @@ select {
   select {
     color: navy;
     font-weight: bolder;
+  }
+
+  .select {
+    background: none;
   }
 
   .select::after,
