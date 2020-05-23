@@ -1,3 +1,5 @@
+$darkcolor: black;
+
 body {
   background-color: white;
   box-sizing: border-box;
@@ -117,7 +119,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid $darkcolor;
 }
 
 .grid.gx3 {
@@ -169,11 +171,16 @@ select {
 .houston .blocked {
   width: 100%;
   height: 100%;
-  background: repeating-linear-gradient(45deg, transparent, transparent 10px, #ccc 10px, #ccc 20px), linear-gradient(to bottom, #eee, #999);
-  -webkit-print-color-adjust: exact !important;
-  /* Chrome, Safari */
-  color-adjust: exact !important;
-  /*Firefox*/
+  background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      #ccc 10px,
+      #ccc 20px
+    ),
+    linear-gradient(to bottom, #eee, #999);
+  -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
+  color-adjust: exact !important; /*Firefox*/
   border: 0;
 }
 
@@ -203,7 +210,7 @@ select {
 }
 
 .houston .poly.grid .box {
-  border: 1px solid black;
+  border: 1px solid $darkcolor;
 }
 
 .langley {
@@ -235,7 +242,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid $darkcolor;
 }
 
 .langley .box.bubble {
@@ -262,7 +269,7 @@ select {
 
 .washington .circ,
 .washington .sqr {
-  border: 1px solid black;
+  border: 1px solid $darkcolor;
   color: lightsteelblue;
   font-size: 16px;
   line-height: 25px;
@@ -292,7 +299,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid $darkcolor;
 }
 
 .washington .bubbles {
@@ -315,7 +322,7 @@ select {
 
 @media print {
   select {
-    color: black;
+    color: $darkcolor;
     font-weight: bolder;
   }
 
