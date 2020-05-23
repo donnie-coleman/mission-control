@@ -169,7 +169,16 @@ select {
 .houston .blocked {
   width: 100%;
   height: 100%;
-  background: repeating-linear-gradient(45deg, transparent, transparent 10px, #ccc 10px, #ccc 20px), linear-gradient(to bottom, #eee, #999);
+  background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      #ccc 10px,
+      #ccc 20px
+    ),
+    linear-gradient(to bottom, #eee, #999);
+  -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
+  color-adjust: exact !important; /*Firefox*/
   border: 0;
 }
 
@@ -313,6 +322,12 @@ select {
   select {
     color: navy;
     font-weight: bolder;
+  }
+
+  .select,
+  select,
+  .select::after {
+    background: none;
   }
 
   .select::after,
