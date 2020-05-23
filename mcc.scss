@@ -1,9 +1,10 @@
 $darkcolor: black;
+$lightcolor: lightgrey;
 
 body {
   background-color: white;
   box-sizing: border-box;
-  font-family: 'Courier', sans-serif;
+  font-family: "Courier", sans-serif;
 }
 
 /* Reset Select */
@@ -271,7 +272,7 @@ select {
 .washington .circ,
 .washington .sqr {
   border: 1px solid $darkcolor;
-  color: lightsteelblue;
+  color: $lightcolor;
   font-size: 16px;
   line-height: 25px;
 }
@@ -318,7 +319,7 @@ select {
 .lock {
   width: 100%;
   height: 100%;
-  fill: lightsteelblue;
+  fill: $lightcolor;
 }
 
 @media print {
