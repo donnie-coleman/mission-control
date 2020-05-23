@@ -117,7 +117,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid navy;
+  border: 1px solid black;
 }
 
 .grid.gx3 {
@@ -203,7 +203,7 @@ select {
 }
 
 .houston .poly.grid .box {
-  border: 1px solid navy;
+  border: 1px solid black;
 }
 
 .langley {
@@ -235,7 +235,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid navy;
+  border: 1px solid black;
 }
 
 .langley .box.bubble {
@@ -262,7 +262,7 @@ select {
 
 .washington .circ,
 .washington .sqr {
-  border: 1px solid navy;
+  border: 1px solid black;
   color: lightsteelblue;
   font-size: 16px;
   line-height: 25px;
@@ -292,7 +292,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid navy;
+  border: 1px solid black;
 }
 
 .washington .bubbles {
@@ -315,7 +315,7 @@ select {
 
 @media print {
   select {
-    color: navy;
+    color: black;
     font-weight: bolder;
   }
 
