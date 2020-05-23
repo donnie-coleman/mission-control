@@ -324,6 +324,10 @@ select {
     display: none;
   }
 
+  .blocked {
+    background-color: grey;
+  }
+  
   @page {
     margin: 0 10px 0 20px;
     size: portrait;
